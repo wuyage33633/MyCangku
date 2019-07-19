@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>品牌管理</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入angularjs -->
+    <script src="../plugins/angularjs/angular.min.js"></script>
+    <script src="../plugins/angularjs/pagination.js"></script>
+    <script type="text/javascript">
+			<!--  自定义module然后引入分页插件  -->
+		var app = angular.module("youlexuan",[]);
+	</script>
+	
+	<script src="../js/controller/baseController.js"></script>
+	<script src="../js/service/brandService.js"></script>
+    <script src="../js/controller/brandController.js"></script>
+   
+    
+</head>
+<body class="hold-transition skin-red sidebar-mini"
+ ng-app="youlexuan" ng-controller="brandController"  >
+  	
+        <div class="pull-left">
+            <div class="form-group form-inline">
+                <div class="btn-group">
+                    <button type="button" ng-click="importSolrData()" class="btn btn-default" title="导入sorl数据" ><i class="fa fa-trash-o"></i> 导入solr数据</button>           
+                </div>
+            </div>
+        </div>
+                          
+   
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+
+<script type="text/javascript">
+	var app = angular.module('mymod',[]);
+	app.controller('mycontroller',function($scope){
+		$scope.add=function(){
+			return  parseInt($scope.a) + parseInt($scope.b)
+		}
+	});
+
+</script>
+
+</head>
+
+<body ng-app="mymod" ng-controller="mycontroller" >
+     	<input ng-model="a">
+     	<input ng-model = "b">	
+     	
+     	
+     	{{add()}}
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+
+<script type="text/javascript">
+	var app = angular.module('mymod',[]);// 自定义模块  momod
+	// 定义控制器
+	app.controller('mycontroller',function($scope){
+		$scope.add=function(){
+			$scope.x = parseInt($scope.a) + parseInt($scope.b)
+		}
+	});
+	
+</script>
+
+
+</head>
+
+<body ng-app="mymod" ng-controller="mycontroller" >
+	  a	<input ng-model="a"><br>
+	  b	<input ng-model="b"><br>
+     	<button ng-click="add()">点击事件</button>
+     	运算的结果{{x}}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

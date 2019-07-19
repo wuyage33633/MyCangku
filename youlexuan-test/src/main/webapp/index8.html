@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+
+<script type="text/javascript">
+	var app = angular.module('mymod',[]);
+	app.controller('mycontroller',function($scope){
+		$scope.list = [
+		               {"name":"xixi","age":12},
+		               {"name":"xixi","age":12},
+		               {"name":"xixi","age":12},
+		               {"name":"xixi","age":12},
+		               {"name":"xixi","age":12}
+		               ];
+	});
+</script>
+
+
+</head>
+
+<body ng-app="mymod" ng-controller="mycontroller" >
+	  <table >
+	  		<tr ng-repeat=" a in list ">
+	  		<td>{{$index}}</td>	<td>{{a.name}}</td>
+	  		</tr>
+	  </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

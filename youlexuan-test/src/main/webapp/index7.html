@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+
+<script type="text/javascript">
+	var app = angular.module('mymod',[]);
+	app.controller('mycontroller',function($scope,$http){
+		$scope.findUser=function(){
+			$http.get("/find").success(
+				function(data){
+					$scope.list = data;
+				}
+			);
+		}
+	});
+</script>
+
+
+</head>
+
+<body ng-app="mymod" ng-controller="mycontroller" ng-init="findUser()">
+	  <table>
+	  	<tr>
+	  		<td>姓名</td>
+	  		<td>年龄</td>
+	  		<td>xxx</td>
+	  	</tr>
+	  	<tr ng-repeat=" entry in list">
+	  		<td>{{entry.name}}</td>
+	  		<td>{{entry.age}}</td>
+	  	</tr>
+	  </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

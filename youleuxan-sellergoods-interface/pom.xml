@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.offcn</groupId>
+    <artifactId>youlexuan-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.offcn</groupId>
+  <artifactId>youleuxan-sellergoods-interface</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <dependencies>
+  	<!-- pojo -->
+  	<dependency>
+  	  <groupId>com.offcn</groupId>
+	  <artifactId>youlexuan-pojo</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<!-- common -->
+  	<dependency>
+  	  <groupId>com.offcn</groupId>
+	  <artifactId>youlexuan-common</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+</project>
